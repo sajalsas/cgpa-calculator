@@ -47,7 +47,6 @@ h2 {
   margin-bottom: 15px;
 }
 
-
 .subject, .cgpa-input {
   display: flex;
   gap: 20px;
@@ -120,13 +119,46 @@ button.toggle-input {
   text-align: center;
   width: 250px;
 }
-.x{
-  color: red;
-}
+
 .calculate {
-  margin-top: 10px; /* Adjusted margin-top for Calculate button */
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .add {
-  margin-bottom: 10px; /* Adjusted margin-bottom for Add Semester button */
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  
+  form {
+    padding: 20px;
+  }
+  
+  button {
+    padding: 12px 24px;
+  }
+  
+  .semester {
+    margin-bottom: 20px;
+  }
+  
+  .subject, .cgpa-input {
+    gap: 10px;
+  }
+  
+  select, input {
+    padding: 12px;
+    font-size: 0.9em;
+  }
+  
+  .result {
+    padding: 15px;
+    font-size: 1.2em;
+    width: 200px;
+  }
 }
